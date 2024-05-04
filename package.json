@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "cloudinary-video-player": "^2.0.1",
+    "mongodb": "^6.6.0",
+    "mongoose": "^8.0.0",
     "next": "14.0.4",
+    "next-auth": "^5.0.0-beta.3",
     "next-cloudinary": "^6.5.1",
     "next-video": "^1.0.4",
     "next-videos": "^1.4.1",
