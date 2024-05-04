@@ -1,0 +1,49 @@
+.highlight {
+  color: gold;
+}
+
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.imgContainer {
+  flex: 1;
+  position: relative;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.boxes {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: 80;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .boxes {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
