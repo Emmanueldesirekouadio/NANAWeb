@@ -1,5 +1,7 @@
 import PostCard from "@/components/postCard/postCard";
 import styles from "./blog.module.css";
+// Remove the unused import statement for getPosts
+// import { getPosts } from "@/lib/data";
 
 // FETCH DATA WITH AN API
 const getData = async () => {

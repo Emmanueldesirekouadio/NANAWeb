@@ -7,7 +7,7 @@ const LoginPage = () => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <form action={handleGithubLogin}>
-          <button className={styles.github}>Login with Github</button>
+          <button className={styles.github}>Se Connecter avec Github</button>
         </form>
         <LoginForm />
       </div>

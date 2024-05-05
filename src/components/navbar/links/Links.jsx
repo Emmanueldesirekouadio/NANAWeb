@@ -20,7 +20,7 @@ const links = [
   },
   {
     title: "Blog",
-    path: "/posts",
+    path: "/blog",
   },
 ];
 

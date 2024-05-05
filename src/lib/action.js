@@ -1,16 +1,12 @@
 "use server";
 
+import bcrypt from "bcryptjs";
 import { revalidatePath } from "next/cache";
+import { signIn, signOut } from "./auth";
 import { Post, User } from "./models";
 import { connectToDb } from "./utils";
-import { signIn, signOut } from "./auth";
-import bcrypt from "bcryptjs";
 
 export const addPost = async (prevState, formData) => {
-  // const title = formData.get("title");
-  // const desc = formData.get("desc");
-  // const slug = formData.get("slug");
-
   const { title, desc, slug, userId } = Object.fromEntries(formData);
 
   try {
@@ -86,12 +82,12 @@ export const deleteUser = async (formData) => {
 };
 
 export const handleGithubLogin = async () => {
-  "use server";
+  //   "use server";
   await signIn("github");
 };
 
 export const handleLogout = async () => {
-  "use server";
+  //   "use server";
   await signOut();
 };
 
