@@ -25,10 +25,7 @@ const Home = () => {
           exploration !
         </p>
         <br />
-        <div className={styles.buttons}>
-          <button className={styles.button}>Découvrir</button>
-          <button className={styles.button}>Contact</button>
-        </div>
+
         <div className={styles.brands}>
           <h2 className={styles.title}>
             <span className={styles.highlight}>Nos Réalisations</span>

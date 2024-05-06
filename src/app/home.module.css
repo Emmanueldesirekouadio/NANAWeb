@@ -43,18 +43,6 @@
   margin-bottom: 20px;
 }
 
-.button {
-  background-color: gold; /* Couleur de fond du bouton */
-  color: black; /* Couleur du texte du bouton */
-  padding: 10px 20px; /* Ajoutez de l'espace à l'intérieur du bouton */
-  text-align: center; /* Centrez le texte horizontalement */
-  text-decoration: none; /* Supprimez le soulignement du texte */
-  display: inline-block; /* Affichez le bouton en tant qu'élément en ligne */
-  font-size: 16px; /* Définissez la taille de la police du bouton */
-  margin: 4px 2px; /* Ajoutez de l'espace autour du bouton */
-  cursor: pointer; /* Définissez le curseur de la souris en pointeur */
-  border-radius: 12px; /* Arrondissez les coins du bouton */
-}
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -66,12 +54,45 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .title {
-    font-size: 64px;
+    font-size: 50px;
+  }
+  .container {
+    flex-direction: column;
   }
 
   .brands {
     width: 100%;
   }
+} */
+@media (max-width: 768px) {
+  /* Pour les téléphones de taille moyenne */
+
+  .brandImgContainer {
+    max-width: 100%; /* Ajustez la largeur maximale de l'image pour remplir l'écran */
+    overflow: hidden; /* Masquez le débordement pour éviter l'étirement de l'image */
+  }
+
+  .brandImg {
+    width: 100%; /* Ajustez la largeur de l'image pour remplir le conteneur parent */
+    height: auto; /* Ajustez la hauteur de l'image en conséquence */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Pour les téléphones de petite taille */
+
+  .title {
+    font-size: 30px; /* Réduisez davantage la taille de la police pour les petits écrans */
+    width: 100%; /* Empêchez l'étirement du titre */
+    overflow-wrap: break-word; /* Permettez le passage à la ligne du titre */
+  }
+}
+.textContainer {
+  padding: 5px; /* Réduisez davantage l'espacement autour du texte */
+}
+
+.textContainer p {
+  font-size: 19px; /* Réduisez davantage la taille de la police pour les petits écrans */
 }
