@@ -24,7 +24,7 @@ function AboutPage() {
           <div className={styles.box}>
             <h1>
               {" "}
-              10 <span className={styles.highlight}>K +</span>
+              10 <span className={styles.highlight}>K + abonnés </span>
             </h1>
             <p>Plus de 5 ans d&apos;Expérience</p>
           </div>
