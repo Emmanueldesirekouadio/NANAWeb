@@ -18,18 +18,14 @@ const links = [
     title: "Contact",
     path: "/contact",
   },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
 ];
 
 function Links() {
   const [open, setOpen] = useState(false);
 
   // TEMPORARY
-  const session = true;
-  const isAdmin = true;
+  // const session = true;
+  // const isAdmin = true;
 
   return (
     <div className={styles.Links}>
@@ -37,7 +33,7 @@ function Links() {
         {links.map((link) => (
           <NavLink item={link} key={link.title} />
         ))}
-        {session ? (
+        {/* {session ? (
           <>
             {isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />}
 
@@ -45,7 +41,7 @@ function Links() {
           </>
         ) : (
           <NavLink item={{ title: "Login", path: "/login" }} />
-        )}
+        )} */}
       </div>
       <Image
         className={styles.menuButton}
