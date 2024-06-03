@@ -5,7 +5,7 @@
 }
 
 .highlight {
-  color: gold;
+  color: rgb(187, 182, 182);
 }
 .brandImgContainer {
   display: flex;
@@ -90,9 +90,20 @@
   }
 }
 .textContainer {
-  padding: 5px; /* Réduisez davantage l'espacement autour du texte */
+  padding: 10px; /* Réduisez davantage l'espacement autour du texte */
 }
 
 .textContainer p {
   font-size: 19px; /* Réduisez davantage la taille de la police pour les petits écrans */
+}
+.embla__container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.embla__slide {
+  flex: 0 0 auto;
+  width: 100%; /* Set each slide to occupy the full width of its container */
+  scroll-snap-align: start;
 }

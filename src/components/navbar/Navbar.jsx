@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className={styles.container}>
       <Link href='/' className={styles.logo}>
-        <Image src='/logo.jpeg' alt='logo' width={120} height={120} />
+        <Image src='/logo.png' alt='logo' width={200} height={200} />
       </Link>
       <div>
         <Links />

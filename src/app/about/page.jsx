@@ -6,19 +6,35 @@ function AboutPage() {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <h2 className={styles.subtitle}>
-          A propos de <span className={styles.highlight}>NC Beauty</span>
+          <span className={styles.highlight}>EVENTY</span>
         </h2>
         <br />
-        <h1>
-          Explorez l&apos;univers de la beauté avec NaNa Cissé Beauty. <br />{" "}
-        </h1>
+
         <p className={styles.desc}>
-          Nous croyons en la puissance de la confiance en soi que procure une
-          peau rayonnante et des traits délicatement rehaussés. Chez nous,
-          chaque femme est célébrée pour sa beauté unique et sa personnalité
-          éclatante. Rejoignez notre communauté pour découvrir des conseils, des
-          astuces et des produits qui vous aideront à briller de
-          l&apos;intérieur et à rayonner dans toutes les occasions.
+          À Propos d&apos;Eventy Bienvenue sur Eventy, votre destination
+          virtuelle pour l&apos;innovation, l&apos;inspiration et la connexion.
+          <br />
+          Chez Eventy, nous croyons au pouvoir de rassembler les esprits
+          créatifs, les entrepreneurs ambitieux et les curieux passionnés pour
+          partager des idées, explorer de nouvelles perspectives et créer des
+          opportunités sans limites.
+          <br />
+          Notre mission est de fournir une plateforme dynamique et accessible où
+          les innovateurs du monde entier peuvent se réunir, échanger des
+          connaissances, collaborer sur des projets et découvrir les dernières
+          tendances dans leur domaine d&apos;intérêt.
+          <br />
+          Que vous soyez un professionnel à la recherche de nouvelles
+          collaborations, un créateur désireux de partager vos créations avec le
+          monde, ou simplement un enthousiaste de la technologie et de
+          l&apos;innovation, Eventy est l&apos;endroit où vous trouverez
+          l&apos;inspiration, l&apos;expertise et les connexions dont vous avez
+          besoin pour réaliser vos rêves.
+          <br />
+          Rejoignez-nous dès aujourd&apos;hui et faites partie d&apos;une
+          communauté mondiale d&apos;innovateurs passionnés qui repoussent les
+          limites de ce qui est possible. Chez Eventy, l&apos;avenir est entre
+          vos mains.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
@@ -30,9 +46,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-      <div className={styles.imgContainer}>
-        <Image src='/ana.png' alt='nana photo' width={500} height={500} />
-      </div>
+      :
     </div>
   );
 }
