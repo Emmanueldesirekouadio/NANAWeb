@@ -31,8 +31,8 @@ const Home = () => {
           captivantes, et engagez-vous avec des professionnels et des passionnés
           du monde entier.
           <br /> Que vous soyez ici pour découvrir de nouvelles tendances,
-          établir des contacts précieux, ou simplement pour vous inspirer,
-          Eventy est le lieu où tout devient possible.
+          établir des contacts précieux, ou simplement pour vous inspirer, est
+          blabaNiant.event le lieu où tout devient possible.
           <br />
           <br />
           Merci de nous rejoindre dans cette aventure passionnante.
