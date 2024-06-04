@@ -1,70 +1,68 @@
-.highlight {
-  color: white;
-}
-
 .container {
   display: flex;
-  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.textImageContainer {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .textContainer {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  max-width: 600px;
 }
 
-.title {
+.subtitle {
   font-size: 2rem;
   font-weight: bold;
-  text-align: center;
-  margin: 1rem 0;
 }
 
-.imgContainer {
-  flex: 1;
-  position: relative;
+.highlight {
+  color: var(--textSoft);
 }
 
 .desc {
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
 }
+
 .boxes {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  font-weight: 80;
+  margin-top: 20px;
+}
+
+.box {
+  padding: 10px;
+  background: rgba(0, 85, 255, 0.529);
+  border-radius: 8px;
+}
+
+.imageContainer {
+  flex: 1;
+  max-width: 500px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
-  /* Pour les téléphones de taille moyenne */
-
-  .imgContainer {
-    max-width: 100%; /* Ajustez la largeur maximale de l'image pour remplir l'écran */
-    overflow: hidden; /* Masquez le débordement pour éviter l'étirement de l'image */
-  }
-
-  .imgContainer img {
-    width: 100%; /* Ajustez la largeur de l'image pour remplir le conteneur parent */
-    height: auto; /* Ajustez la hauteur de l'image en conséquence */
-  }
-  .container {
+  .textImageContainer {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Pour les téléphones de petite taille */
-
-  .title {
-    font-size: 30px; /* Réduisez davantage la taille de la police pour les petits écrans */
-    width: 100%; /* Empêchez l'étirement du titre */
-    overflow-wrap: break-word; /* Permettez le passage à la ligne du titre */
+    align-items: center;
   }
 
-  .desc {
-    font-size: 16px; /* Réduisez davantage la taille de la police pour les petits écrans */
+  .textContainer {
+    max-width: 100%;
+  }
+
+  .imageContainer {
+    max-width: 100%;
   }
 }

@@ -2,8 +2,8 @@
   --bg: black;
   --text: white;
   --bgSoft: #2d2b42;
-  --textSoft: gray;
-  --btn: white;
+  --textSoft: rgb(230, 114, 12);
+  --btn: rgb(216, 112, 21);
   --bgBlue: rgb(6, 6, 28);
 }
 

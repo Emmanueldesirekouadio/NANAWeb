@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
+import React from "react";
 
 import styles from "./home.module.css"; // Import your CSS module
 
@@ -12,14 +12,17 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1>EVENTY</h1>
+        <h1>
+          {" "}
+          <span className={styles.highlight}>BlaNian.Event</span>
+        </h1>
         <br />
         <br />
         <p className={styles.text}>
-          Bienvenue à Eventy Nous sommes ravis de vous accueillir à Eventy,
-          votre salon virtuel dédié à la découverte, à l&apos;innovation et à la
-          connexion.
-          <br /> Chez Eventy, nous avons créé un espace où les idées se
+          Bienvenue à BlaNian.Event Nous sommes ravis de vous accueillir à
+          BlaNian.Event, votre salon virtuel dédié à la découverte, à
+          l&apos;innovation et à la connexion.
+          <br /> Chez BlaNian.Event, nous avons créé un espace où les idées se
           rencontrent, où les passions se partagent, et où les opportunités
           fleurissent.
           <br />
@@ -40,7 +43,7 @@ const Home = () => {
           à offrir.
           <br />
           <br />
-          Encore une fois, bienvenue à Eventy !
+          Encore une fois, bienvenue à BlaNian.Event!
         </p>
         <br />
 
@@ -134,11 +137,6 @@ const Home = () => {
               {/* Add more Image components here */}
             </div>
           </div>
-          <h1>IDENTIFIEZ-NOUS SUR VOS SELFIES</h1>
-          <br />
-          <h1>
-            <span className={styles.highlight}>#EVENTY</span>
-          </h1>
         </div>
       </div>
     </div>

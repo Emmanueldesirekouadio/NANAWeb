@@ -2,108 +2,78 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.highlight {
-  color: rgb(187, 182, 182);
-}
-.brandImgContainer {
-  display: flex;
-  justify-content: center; /* Centrez les éléments horizontalement */
-  align-items: center; /* Centrez les éléments verticalement */
-  max-width: 900px; /* Ajustez la largeur maximale de l'image si nécessaire */
-  margin-top: 20px; /* Ajoutez un espace en haut de l'image */
-}
-.brandImg {
-  max-width: 1000px;
-}
-
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 1rem 0;
-}
-.text {
-  font-size: 16px; /* Définissez la taille de la police de votre paragraphe */
-  line-height: 1.6; /* Définissez la hauteur de ligne de votre paragraphe */
-  margin-bottom: 20px; /* Ajoutez un espace en bas de chaque paragraphe */
-  align-items: center;
+  flex-direction: column;
 }
 
 .textContainer {
-  max-width: 800px;
+  max-width: 90%;
   padding: 20px;
-  text-align: center; /* Centrez le texte horizontalement */
+  text-align: center;
 }
 
 .textContainer p {
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.brandImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.highlight {
+  color: var(--textSoft);
+}
+
+.brandImg {
+  max-width: 90%;
+  height: auto;
   margin-bottom: 20px;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-}
-
-/* @media (max-width: 768px) {
-  .title {
-    font-size: 50px;
-  }
-  .container {
-    flex-direction: column;
-  }
-
-  .brands {
-    width: 100%;
-  }
-} */
 @media (max-width: 768px) {
-  /* Pour les téléphones de taille moyenne */
+  .textContainer {
+    padding: 10px;
+  }
 
-  .brandImgContainer {
-    max-width: 100%; /* Ajustez la largeur maximale de l'image pour remplir l'écran */
-    overflow: hidden; /* Masquez le débordement pour éviter l'étirement de l'image */
+  .textContainer p {
+    font-size: 16px;
   }
 
   .brandImg {
-    width: 100%; /* Ajustez la largeur de l'image pour remplir le conteneur parent */
-    height: auto; /* Ajustez la hauteur de l'image en conséquence */
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  /* Pour les téléphones de petite taille */
-
-  .title {
-    font-size: 30px; /* Réduisez davantage la taille de la police pour les petits écrans */
-    width: 100%; /* Empêchez l'étirement du titre */
-    overflow-wrap: break-word; /* Permettez le passage à la ligne du titre */
+  .textContainer p {
+    font-size: 14px;
   }
 }
-.textContainer {
-  padding: 10px; /* Réduisez davantage l'espacement autour du texte */
-}
 
-.textContainer p {
-  font-size: 19px; /* Réduisez davantage la taille de la police pour les petits écrans */
-}
 .embla__container {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  width: 100%; /* Définir la largeur du conteneur du carrousel sur 100% */
 }
 
 .embla__slide {
   flex: 0 0 auto;
-  width: 100%; /* Set each slide to occupy the full width of its container */
+  width: 80%; /* Définir la largeur de chaque diapositive du carrousel */
   scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+  .embla__slide {
+    width: 90%; /* Réduire la largeur des diapositives pour s'adapter aux petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  .embla__slide {
+    width: 95%; /* Réduire encore la largeur des diapositives pour les écrans très petits */
+  }
 }
