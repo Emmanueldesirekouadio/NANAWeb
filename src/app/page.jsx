@@ -1,14 +1,10 @@
 "use client";
 
-import useEmblaCarousel from "embla-carousel-react";
-import Image from "next/image";
 import React from "react";
 
 import styles from "./home.module.css"; // Import your CSS module
 
 const Home = () => {
-  const [emblaRef] = useEmblaCarousel();
-
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
@@ -47,97 +43,7 @@ const Home = () => {
         </p>
         <br />
 
-        <div className={styles.brands}>
-          <h2 className={styles.title}>
-            <span className={styles.highlight}>EVENEMENT DU MOMENT</span>
-          </h2>
-          <div ref={emblaRef} className={styles.brandImgContainer}>
-            <div className={styles.embla__container}>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/l.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/ll.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/lll.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/llll.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/lllll.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/lllllll.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/llllllll.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/g.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              <div className={styles.embla__slide}>
-                <Image
-                  src='/h.jpeg'
-                  alt='brand'
-                  width={900}
-                  height={400}
-                  priority
-                />
-              </div>
-              {/* Add more Image components here */}
-            </div>
-          </div>
-        </div>
+        {/* Add more Image components here */}
       </div>
     </div>
   );
