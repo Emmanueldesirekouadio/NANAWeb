@@ -36,8 +36,8 @@ const Home = () => {
           <br />
           <br />
           Merci de nous rejoindre dans cette aventure passionnante.
-          <br /> Nous espérons que votre expérience à Eventy sera enrichissante
-          et mémorable.
+          <br /> Nous espérons que votre expérience à BlaNiant.Event sera
+          enrichissante et mémorable.
           <br /> N&apos;hésitez pas à naviguer à travers nos différentes
           sections et à profiter pleinement de tout ce que notre salon virtuel a
           à offrir.
